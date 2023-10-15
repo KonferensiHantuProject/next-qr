@@ -5,7 +5,7 @@ const Navbar = () => {
     return ( 
         <nav className="top-0 flex justify-between mb-6 p-3 bg-slate-300">
             <div className="logo">
-                <Image src="/Bonevian.png" width={50} height={50}></Image>
+                <Image src="/Bonevian.png" width={50} height={50} alt="picture"></Image>
             </div>
             <div className="flex justify-evenly min-w-[300px] items-center">
                 <Link className="hover:font-bold" href="/">Home</Link>
