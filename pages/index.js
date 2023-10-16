@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,9 +11,9 @@ export default function Home() {
         <p className='font-extrabold text-4xl lg:text-5xl'>Welcome</p>
         <hr className='mt-2 mb-2 border-[0.3px] border-slate-300' />
         <p className='font-semibold mb-3 lg:text-2xl lg:mb-5'>Aplikasi ini merupakan sebuah generator QR dengan Next JS</p>
-        <a className='' href="/input">
+        <Link href="/input">
           <button className='bg-blue-400 p-2 lg:p-3 lg:text-xl rounded-lg text-white'>Start</button>
-        </a>
+        </Link>
       </div>
     </div>
   )

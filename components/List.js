@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import QRCode from 'qrcode'
+import Link from "next/link";
 
 const List = ({result}) => {
     
@@ -35,9 +36,9 @@ const List = ({result}) => {
             </tbody>
             </table>
             
-            <a href="/" className="p-3 bg-blue-500 rounded-md text-white">
+            <Link href="/" className="p-3 bg-blue-500 rounded-md text-white">
                 <button>Home</button>
-            </a>
+            </Link>
         </div>
     );
 }
