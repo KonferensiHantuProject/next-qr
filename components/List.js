@@ -36,12 +36,14 @@ const List = ({result}) => {
                 ))}
             </tbody>
             </table>
-            
-            <Link href="/" className="p-3 bg-blue-500 rounded-md text-white">
+
+            <ScrollTop></ScrollTop>
+
+            <Link onClick={() => router.reload()} href="/" className="p-3 bg-blue-500 rounded-md text-white">
                 <button>Home</button>
             </Link>
 
-            <ScrollTop></ScrollTop>
+
         </div>
     );
 }
