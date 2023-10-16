@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import QRCode from 'qrcode'
 import Link from "next/link";
+import ScrollTop from "./scroll/ScrollTop";
 
 const List = ({result}) => {
     
@@ -39,6 +40,8 @@ const List = ({result}) => {
             <Link href="/" className="p-3 bg-blue-500 rounded-md text-white">
                 <button>Home</button>
             </Link>
+
+            <ScrollTop></ScrollTop>
         </div>
     );
 }
